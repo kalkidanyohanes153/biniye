@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Gift</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9aa2, #ffb347);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.2);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #fff;
+      color: #ff6b6b;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background: #ffe0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 Happy Birthday! 🎂</h1>
+    <p>This is your special birthday gift page. Click the button below to go to the home page.</p>
+    <a href="home.html">Open Home Page</a>
+  </div>
+</body>
+</html>

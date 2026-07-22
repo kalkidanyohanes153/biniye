@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letters & Images</title>
+  <style>
+    :root {
+      --bg: #ffe7f3;
+      --card: #ffffff;
+      --accent: #d96ab3;
+      --text: #3a1c3a;
+      --shadow: rgba(0, 0, 0, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #ffd4ea, #f8e8ff);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+    }
+
+    .container {
+      width: min(100%, 920px);
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 28px;
+      box-shadow: 0 24px 80px var(--shadow);
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 2rem;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(217, 106, 179, 0.12), rgba(255, 255, 255, 0.7));
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #4b1a4b;
+    }
+
+    .header p {
+      max-width: 36rem;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #5f2b5f;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+      padding: 1.5rem 2rem 2rem;
+    }
+
+    .image-card {
+      background: var(--card);
+      border: 1px solid rgba(217, 106, 179, 0.18);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      max-height: 420px;
+    }
+
+    .caption {
+      padding: 1rem;
+      font-size: 0.95rem;
+      color: #743e74;
+      text-align: center;
+      background: rgba(255, 244, 250, 0.9);
+    }
+
+    @media (max-width: 760px) {
+      .gallery {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>letters</h1>
+      <p>I know this letter reminds you of the first letter we gave each other, and that's exactly what I want.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="image-card">
+        <img src="photo_2026-07-22_09-56-53.jpg" alt="Memory image 1">
+        
+      </div>
+      <div class="image-card">
+        <img src="photo_2026-07-22_09-56-39.jpg" alt="Memory image 2">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
